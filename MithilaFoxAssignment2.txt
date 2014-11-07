@@ -2,16 +2,16 @@ Paste the URL for the home page of your website, which should be at GitHub Pages
 ... mnfox.pages.github.com
 
 Post a link to the GitHub repository of your files as well.
-...
+... github.com/mnfox/mnfox.github.io
 
-My two jQuery-driven interactive elements in the form include form validation after clicking 'place your booking' where the email and phone number fields are validated and it is located at this URL: ____ (.../book.html)
+My two jQuery-driven interactive elements in the form include form validation after clicking 'place your booking' where the email and phone number fields are checked for whether they have content inputted, and whether that content is in a valid form. It is located at this URL: http://mnfox.github.io/book.html
 
-My site’s click effect is the ability to sort dog bath options by price or alphabetical and it is located at this URL: ____ (.../options.html)
+My site’s click effect is the ability to sort dog bath options by price or alphabetical. The options are sorted, as well as the number one choice in that section being highlighted, accordingly. It is located at this URL: http://mnfox.github.io/options.html
 
-My site’s hover effect is the ability to highlight dog bath options by category and it is located at this URL: ____ (.../options.html)
+My site’s hover effect is the ability to hover over dog bath options, and see their tags (e.g. style only, cat friendly, etc.) as well as see a brief pop up description of the treatment. It is located at this URL: http://mnfox.github.io/options.html
 
-My if/else choice is the form validation and it is located at this URL: ____ (.../book.html)
+My if/else choice is the form validation and it is located at this URL: http://mnfox.github.io/book.html
 
-My effect that requires filtering the results is the ability to sort dog bath options by price or by alphabetical and it is located at this URL: ____ (.../options.html)
+My effect that requires filtering the results is the ability to sort dog bath options by price or by alphabetical and it is located at this URL: http://mnfox.github.io/options.html
 
-Two more effects of my choice are adding helper text to 'Options' showing that this is a 'new!' page on hover over the 'Options text' located at this URL (.../options.html), and the fading in and out effect on the 'Make a booking' button located at this URL: ____ (.../index.html)
+Two more effects of my choice are adding adding a fade in effect to the jumbotron on pageload on the index page, as well as the bolding of text when icons are hovered over (beneath the jumbotron). Both of these are located at this URL: http://mnfox.github.io/index.html
