@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="ui-mobile">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<base href="http://demos.jquerymobile.com/1.4.5/pages-multi-page/index.html#one">-->
+    <base href=".">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Part 3 - jQuery Mobile</title>
+    <link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.5/css/themes/default/jquery.mobile-1.4.5.min.css">
+    <!--    <link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.5/_assets/css/jqm-demos.css">-->
+    <link rel="stylesheet" href="css/nice-blue.min.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+    <link rel="shortcut icon" href="http://demos.jquerymobile.com/1.4.5/favicon.ico">
+    <script src="../final/js/jquery.js"></script>
+    <script src="../final/js/index.js"></script>
+    <script src="../final/js/jquery.mobile-1.4.5.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="chrome-extension://dagdlcijhfbmgkjokkjicnnfimlebcll/style.css">
+    <script type="text/javascript" charset="utf-8" src="chrome-extension://dagdlcijhfbmgkjokkjicnnfimlebcll/page_context.js"></script>
+    <meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;jQuery&quot;:&quot;1.10.2&quot;,&quot;jQuery UI&quot;:&quot;c0ab71056b936627e8a7821f03c044aec6280a40&quot;}">
+    <script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script>
+    <style>
+        @media (max-width: 720px) {
+            .ui-block-a,
+            .ui-block-b,
+            .ui-block-c {
+                width: 100% !important;
+                float: none !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="ui-mobile-viewport ui-overlay-a" screen_capture_injected="true">
+
+    <!-- Start of first page: #canvas -->
+    <div data-role="page" id="canvas" data-url="canvas" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="min-height: 607px;">
+
+        <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+            <h1 class="ui-title" role="heading" aria-level="1">My Final Assignment</h1>
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+            <h2>Welcome to part 3 of my DGMD E-20!</h2>
+
+            <a href="http://mnfox.github.io/part1.html">Click here to view my canvas demo</a>
+            <br>
+            <a href="http://mnfox.github.io/part2.html">Click here to view my audio and video demo</a>
+            <hr>
+            <div class="ui-grid-b ui-responsive">
+                <div class="ui-block-a">
+                    <a href="#audio" class="ui-btn ui-icon-audio ui-btn-icon-left ui-shadow ui-corner-all">Audio demos</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#video" class="ui-btn ui-shadow ui-corner-all ui-icon-video ui-btn-icon-left">Video demos</a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#popup" class="ui-btn ui-shadow ui-corner-all ui-icon-action ui-btn-icon-left" data-rel="dialog" data-transition="pop">Send feedback</a>
+                </div>
+            </div>
+            <!--
+<p><a href="#audio" class="ui-btn ui-icon-audio ui-btn-icon-left ui-shadow ui-corner-all">Audio demos</a>
+</p>
+<p><a href="#video" class="ui-btn ui-shadow ui-corner-all ui-icon-video ui-btn-icon-left">Video demos</a>
+</p>
+<p><a href="#popup" class="ui-btn ui-shadow ui-corner-all ui-icon-action ui-btn-icon-left" data-rel="dialog" data-transition="pop">Send feedback</a>
+</p>
+-->
+        </div>
+        <!-- /content -->
+
+        <div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a">
+            <h4 class="ui-title" role="heading" aria-level="1">Mithila Fox | 2014</h4>
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page one -->
+
+    <!-- Start of second page: #audio -->
+    <div data-role="page" id="audio" data-theme="a" data-url="html5" tabindex="0" class="ui-page ui-page-theme-a" style="min-height: 607px;">
+
+        <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+            <h1 class="ui-title" role="heading" aria-level="1">Audio Demos</h1>
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+            <h2>Audio Demos</h2>
+            <p>This page contains demos of audio files playable using an HTML5 component and the jPlayer plug-in.</p>
+
+            <audio controls>
+                <source src="assets/lang.ogg" type="audio/ogg">
+                    <source src="assets/lang.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+            </audio>
+
+            <div class="ui-grid-b ui-responsive">
+                <div class="ui-block-a">
+                    <a href="#canvas" class="ui-btn ui-icon-star ui-btn-icon-left ui-shadow ui-corner-all">Canvas demo</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#video" class="ui-btn ui-shadow ui-corner-all ui-icon-video ui-btn-icon-left">Video demos</a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#popup" class="ui-btn ui-shadow ui-corner-all ui-icon-action ui-btn-icon-left" data-rel="dialog" data-transition="pop">Send feedback</a>
+                </div>
+            </div>
+
+            <!--
+<p><a href="#canvas" class="ui-btn ui-icon-star ui-btn-icon-left ui-shadow ui-corner-all">Canvas demo</a>
+</p>
+<p><a href="#video" class="ui-btn ui-shadow ui-corner-all ui-icon-video ui-btn-icon-left">Video demos</a>
+</p>
+-->
+
+        </div>
+        <!-- /content -->
+
+        <div data-role="footer" role="contentinfo" class="ui-footer ui-bar-inherit">
+            <h4 class="ui-title" role="heading" aria-level="1">Mithila Fox | 2014</h4>
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page two -->
+
+    <!-- Start of second page: #audio -->
+    <div data-role="page" id="video" data-theme="a" data-url="jplayer" tabindex="0" class="ui-page ui-page-theme-a" style="min-height: 607px;">
+
+        <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+            <h1 class="ui-title" role="heading" aria-level="1">Video Demos</h1>
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+            <h2>Video demos</h2>
+            <p>This page contains demos of video files playable using an HTML5 component and the jPlayer plug-in.</p>
+
+            <video width="400" controls>
+                <source src="assets/clip.mp4" type="video/mp4">
+                    <source src="assets/clip.ogv" type="video/ogg">
+                        <source src="assets/clip.m4v" type="video/m4v">
+                            Your browser does not support HTML5 video.
+            </video>
+
+            <div class="ui-grid-b ui-responsive">
+                <div class="ui-block-a">
+                    <a href="#canvas" class="ui-btn ui-icon-star ui-btn-icon-left ui-shadow ui-corner-all">Canvas demo</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#audio" class="ui-btn ui-icon-audio ui-btn-icon-left ui-shadow ui-corner-all">Audio demos</a>
+                </div>
+                <div class="ui-block-c">
+                    <a href="#popup" class="ui-btn ui-shadow ui-corner-all ui-icon-action ui-btn-icon-left" data-rel="dialog" data-transition="pop">Send feedback</a>
+                </div>
+            </div>
+            <!--
+           <p><a href="#canvas" class="ui-btn ui-icon-star ui-btn-icon-left ui-shadow ui-corner-all">Canvas demo</a>
+</p>
+<p><a href="#audio" class="ui-btn ui-icon-audio ui-btn-icon-left ui-shadow ui-corner-all">Audio demos</a>
+</p>
+-->
+
+        </div>
+        <!-- /content -->
+
+        <div data-role="footer" role="contentinfo" class="ui-footer ui-bar-inherit">
+            <h4 class="ui-title" role="heading" aria-level="1">Mithila Fox | 2014</h4>
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page two -->
+
+    <!-- Start of #popup -->
+    <div data-role="page" id="popup" data-url="popup">
+
+        <div data-role="header" data-theme="b">
+            <h1>Send feedback</h1>
+        </div>
+        <!-- /header -->
+
+        <div role="main" class="ui-content">
+            <h2>Tell me what you'd like to see!</h2>
+            <p>Please fill out this form to let me know what other sorts of audio content you're interested in:</p>
+
+            <form>
+                <fieldset data-role="controlgroup">
+                    <legend>Audio:</legend>
+                    <input type="checkbox" name="checkbox-a-2a" id="checkbox-a-2a">
+                    <label for="checkbox-a-2a">mp3</label>
+                    <input type="checkbox" name="checkbox-a-2b" id="checkbox-a-2b">
+                    <label for="checkbox-a-2b">ogg</label>
+                    <input type="checkbox" name="checkbox-a-2c" id="checkbox-a-2c">
+                    <label for="checkbox-a-2c">other</label>
+                </fieldset>
+                <label for="text-audio">If other:</label>
+                <input type="text" data-clear-btn="true" placeholder="(e.g. m4a, wav)" name="text-audio" id="text-audio" value="">
+                <label for="slider-audio">Quality (kbps):</label>
+                <input type="range" name="slider-audio" id="slider-audio" data-highlight="true" min="32" max="512" value="128" step="32">
+                <!--
+                <hr>
+<fieldset data-role="controlgroup">
+    <legend>Video:</legend>
+    <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
+    <label for="checkbox-v-2a">mp4</label>
+    <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
+    <label for="checkbox-v-2b">ogv</label>
+    <input type="checkbox" name="checkbox-v-2c" id="checkbox-v-2c">
+    <label for="checkbox-v-2c">other</label>
+</fieldset>
+<label for="text-3">If other:</label>
+<input type="text" data-clear-btn="true" placeholder="(e.g. webM, mkv)" name="text-3" id="text-3" value="">
+-->
+                <button class="ui-btn">Submit</button>
+            </form>
+
+            <!--
+                       <div class="ui-grid-b ui-responsive">
+    <div class="ui-block-a">
+        <a href="#canvas" class="ui-btn ui-icon-star ui-btn-icon-left ui-shadow ui-corner-all">Canvas demo</a>
+    </div>
+    <div class="ui-block-b">
+        <a href="#audio" class="ui-btn ui-icon-audio ui-btn-icon-left ui-shadow ui-corner-all">Audio demos</a>
+    </div>
+    <div class="ui-block-c">
+        <a href="#popup" class="ui-btn ui-shadow ui-corner-all ui-icon-action ui-btn-icon-left" data-rel="dialog" data-transition="pop">Send feedback</a>
+    </div>
+</div>
+-->
+
+            <p><a href="#canvas" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left">Back to the main page</a>
+            </p>
+        </div>
+        <!-- /content -->
+
+        <div data-role="footer">
+            <h4>Mithila Fox | 2014</h4>
+        </div>
+        <!-- /footer -->
+    </div>
+    <!-- /page popup -->
+
+
+
+
+
+    <div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span>
+        <h1>loading</h1>
+    </div>
+    <script>
+        $(function () {
+            // Bind the swipeHandler callback function to the swipe event on div.box
+            $("body").on("swipe", swipeHandler);
+
+            // Callback function references the event target and adds the 'swipe' class to it
+            function swipeHandler(event) {
+                location.href = "index.html#popup";
+            }
+        });
+    </script>
+</body>
+
+</html>

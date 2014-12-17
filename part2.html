@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Part 2 - HTML5 Audio and Video</title>
+    <link href="http://jplayer.org/js/prettify/prettify-jPlayer.css" rel="stylesheet" type="text/css" />
+    <style>
+        * {
+            font-family: Roboto;
+        }
+        td {
+            text-align: center;
+        }
+    </style>
+    <link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://jplayer.org/latest/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="http://jplayer.org/latest/dist/jplayer/jquery.jplayer.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#jquery_jplayer_1").jPlayer({
+                ready: function () {
+                    $(this).jPlayer("setMedia", {
+                        title: "Big Buck Bunny",
+                        m4v: "assets/clip.m4v",
+                        ogv: "assets/clip.ogv",
+                        poster: "img/video-poster.png"
+                    });
+                },
+                swfPath: "../dist/jplayer",
+                supplied: "webmv, ogv, m4v",
+                size: {
+                    width: "640px",
+                    height: "360px",
+                    cssClass: "jp-video-360p"
+                },
+                useStateClassSkin: true,
+                autoBlur: false,
+                smoothPlayBar: true,
+                keyEnabled: true,
+                remainingDuration: true,
+                toggleDuration: true
+            });
+            $("#jquery_jplayer_audio").jPlayer({
+                ready: function () {
+                    $(this).jPlayer("setMedia", {
+                        title: "KD Lang",
+                        mp3: "assets/lang.mp3",
+                        oga: "assets/lang.ogg"
+                    });
+                },
+                cssSelectorAncestor: "#jp_container_audio",
+                swfPath: "/js",
+                supplied: "m4a, oga",
+                useStateClassSkin: true,
+                autoBlur: false,
+                smoothPlayBar: true,
+                keyEnabled: true,
+                remainingDuration: true,
+                toggleDuration: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h1>My Audio and Video Page</h1>
+    <table style="width:100%">
+        <tr>
+            <th>Type:</th>
+            <th>HTML5</th>
+            <th>jPlayer</th>
+        </tr>
+        <tr>
+            <td>Audio</td>
+            <td>
+                <audio controls>
+                    <source src="assets/lang.ogg" type="audio/ogg">
+                        <source src="assets/lang.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                </audio>
+            </td>
+            <td>
+                <div id="jquery_jplayer_audio" class="jp-jplayer"></div>
+                <div id="jp_container_audio" class="jp-audio" role="application" aria-label="media player">
+                    <div class="jp-type-single">
+                        <div class="jp-gui jp-interface">
+                            <div class="jp-volume-controls">
+                                <button class="jp-mute" role="button" tabindex="0">mute</button>
+                                <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                                <div class="jp-volume-bar">
+                                    <div class="jp-volume-bar-value"></div>
+                                </div>
+                            </div>
+                            <div class="jp-controls-holder">
+                                <div class="jp-controls">
+                                    <button class="jp-play" role="button" tabindex="0">play</button>
+                                    <button class="jp-stop" role="button" tabindex="0">stop</button>
+                                </div>
+                                <div class="jp-progress">
+                                    <div class="jp-seek-bar">
+                                        <div class="jp-play-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                                <div class="jp-duration" role="timer" aria-label="duration" style="text-align:left">&nbsp;</div>
+                                <div class="jp-toggles">
+                                    <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jp-details">
+                            <div class="jp-title" aria-label="title">&nbsp;</div>
+                        </div>
+                        <div class="jp-no-solution">
+                            <span>Update Required</span>
+                            To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+
+            <td>Video</td>
+            <td>
+                <video width="400" controls>
+                    <source src="assets/clip.mp4" type="video/mp4">
+                        <source src="assets/clip.ogv" type="video/ogg">
+                            <source src="assets/clip.m4v" type="video/m4v">
+                                Your browser does not support HTML5 video.
+                </video>
+            </td>
+            <td>
+                <div id="jp_container_1" class="jp-video jp-video-360p" role="application" aria-label="media player">
+                    <div class="jp-type-single">
+                        <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                        <div class="jp-gui">
+                            <div class="jp-video-play">
+                                <button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+                            </div>
+                            <div class="jp-interface">
+                                <div class="jp-progress">
+                                    <div class="jp-seek-bar">
+                                        <div class="jp-play-bar"></div>
+                                    </div>
+                                </div>
+                                <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                                <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                                <div class="jp-controls-holder">
+                                    <div class="jp-controls">
+                                        <button class="jp-play" role="button" tabindex="0">play</button>
+                                        <button class="jp-stop" role="button" tabindex="0">stop</button>
+                                    </div>
+                                    <div class="jp-volume-controls">
+                                        <button class="jp-mute" role="button" tabindex="0">mute</button>
+                                        <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                                        <div class="jp-volume-bar">
+                                            <div class="jp-volume-bar-value"></div>
+                                        </div>
+                                    </div>
+                                    <div class="jp-toggles">
+                                        <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                                        <button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+                                    </div>
+                                </div>
+                                <div class="jp-details">
+                                    <div class="jp-title" aria-label="title">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

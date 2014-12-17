@@ -1,0 +1,9 @@
+My week 10 canvas assignment is located at this/these URL(s): ____
+My week 11 video/audio assignment is located at this/these URL(s): ____
+My week 12-13 jQuery Mobile assignment is located at this/these URL(s): ____
+
+Button is located here: ___
+My two widgets are checkboxes and a slider and they are located on these pages: ___
+My custom theme is applied on this page ___ line number ___ 
+The form is located here: #feedback
+The jQuery Mobile event(s) I used on my site include: swipe They are located here: ____
