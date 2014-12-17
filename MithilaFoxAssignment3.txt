@@ -1,9 +1,9 @@
-My week 10 canvas assignment is located at this/these URL(s): ____
-My week 11 video/audio assignment is located at this/these URL(s): ____
-My week 12-13 jQuery Mobile assignment is located at this/these URL(s): ____
+My week 10 canvas assignment is located at this/these URL(s): http://mnfox.github.io/part1.html
+My week 11 video/audio assignment is located at this/these URL(s): http://mnfox.github.io/part2.html
+My week 12-13 jQuery Mobile assignment is located at this/these URL(s): http://mnfox.github.io/index.html
 
-Button is located here: ___
-My two widgets are checkboxes and a slider and they are located on these pages: ___
-My custom theme is applied on this page ___ line number ___ 
-The form is located here: #feedback
-The jQuery Mobile event(s) I used on my site include: swipe They are located here: ____
+Button icon is located here: http://mnfox.github.io/index.html (icons are on the buttons)
+My two widgets are checkboxes and a slider and they are located on these pages: http://mnfox.github.io/index.html#popup
+My custom theme is applied on this page http://mnfox.github.io/index.html line number 13
+The form is located here: http://mnfox.github.io/index.html#popup
+The jQuery Mobile event(s) I used on my site include: swipe They are located here: http://mnfox.github.io/index.html (swipe anywhere to get a full page feedback page).
